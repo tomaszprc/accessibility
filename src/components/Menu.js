@@ -6,8 +6,6 @@ import { ContrastContext } from "../contexts/ContrastContext";
 
 const Menu = () => {
     const {contrastMode, setContrastMode} = useContext(ContrastContext)
-
-
     SpeechRecognition.startListening({ continuous: true })
     let navigate = useNavigate();
     const commands = [
