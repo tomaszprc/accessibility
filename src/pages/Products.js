@@ -27,7 +27,7 @@ const Products = () => {
 
   return (
     <div className="products">
-    {!browserSupportsSpeechRecognition && <span>Browser doesn't support speech recognition.</span>}
+    {!browserSupportsSpeechRecognition && <span>Przeglądarka nie wspiera sterowania głosem</span>}
     {products.map(product => <ProductItem product={product} key={product.id}/>)}
     </div>
   )
